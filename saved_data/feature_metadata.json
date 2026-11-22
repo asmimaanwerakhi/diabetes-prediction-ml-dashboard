@@ -1,0 +1,54 @@
+{
+  "target_column": "diabetes_risk",
+  "excluded_columns": [
+    "patient_id"
+  ],
+  "feature_columns": [
+    "age",
+    "gender",
+    "city",
+    "bmi",
+    "family_history_diabetes",
+    "physical_activity_level",
+    "diet_type",
+    "smoking_status",
+    "alcohol_consumption",
+    "hours_sleep_per_night",
+    "stress_level",
+    "fasting_blood_sugar",
+    "hba1c_level",
+    "blood_pressure_systolic",
+    "blood_pressure_diastolic",
+    "waist_circumference_cm",
+    "income_bracket"
+  ],
+  "numerical_features": [
+    "age",
+    "bmi",
+    "hours_sleep_per_night",
+    "stress_level",
+    "fasting_blood_sugar",
+    "hba1c_level",
+    "blood_pressure_systolic",
+    "blood_pressure_diastolic",
+    "waist_circumference_cm"
+  ],
+  "categorical_features": [
+    "gender",
+    "city",
+    "family_history_diabetes",
+    "physical_activity_level",
+    "diet_type",
+    "smoking_status",
+    "alcohol_consumption",
+    "income_bracket"
+  ],
+  "target_classes": [
+    "High",
+    "Low",
+    "Moderate"
+  ],
+  "row_count": 15000,
+  "model": "RandomForestClassifier",
+  "random_state": 42
+}
